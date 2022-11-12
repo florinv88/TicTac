@@ -1,0 +1,10 @@
+@import './config', './menuStart', './game', './restart', './winner';
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background-color: $darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

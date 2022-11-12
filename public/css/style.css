@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.menuStart {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  user-select: none;
+}
+.menuStart .icons {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.menuStart .icons img {
+  width: 35px;
+  height: 35px;
+}
+.menuStart .icons img:first-of-type {
+  margin-right: 0.1rem;
+}
+.menuStart .player__pick {
+  background-color: #1f3540;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.menuStart .player__pick h3 {
+  color: rgba(168, 190, 201, 0.5411764706);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+}
+.menuStart .player__pick__buttons {
+  background-color: #01161e;
+  width: 90%;
+  height: 6rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+.menuStart .player__pick__buttons div {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.menuStart .player__pick__buttons div img {
+  width: 40px;
+  height: 40px;
+}
+.menuStart .player__pick__buttons .selected {
+  background-color: rgba(168, 190, 201, 0.5411764706);
+}
+.menuStart .player__pick h4 {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(95, 108, 114, 0.5411764706);
+}
+.menuStart .newGame {
+  width: 80%;
+  height: 4rem;
+  background-color: #f2b237;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuStart .newGame h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+@media all and (max-width: 850px) {
+  .menuStart {
+    width: 55%;
+  }
+}
+@media all and (max-width: 550px) {
+  .menuStart {
+    width: 65%;
+  }
+}
+@media all and (max-width: 450px) {
+  .menuStart {
+    width: 80%;
+  }
+}
+
+.box {
+  width: 31%;
+  height: 150px;
+  background-color: #1f3540;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  width: 80%;
+  height: 50%;
+}
+
+.game {
+  padding: 1rem;
+  width: 35%;
+  height: auto;
+}
+.game .header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.game .header img {
+  width: 40px;
+  height: 40px;
+}
+.game .header img:last-of-type {
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.game .boxes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+.game .boxes__line {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.game .boxes__line:last-of-type {
+  margin-bottom: 0;
+}
+@media all and (max-width: 950px) {
+  .game {
+    width: 50%;
+  }
+}
+@media all and (max-width: 650px) {
+  .game {
+    width: 65%;
+  }
+}
+@media all and (max-width: 500px) {
+  .game {
+    width: 80%;
+  }
+}
+@media all and (max-width: 400px) {
+  .game {
+    width: 90%;
+  }
+}
+
+.restart {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.restart .background {
+  width: 100%;
+  height: 70%;
+  background-color: #01161e;
+  opacity: 0.8;
+}
+.restart .content {
+  width: 100%;
+  height: 30vh;
+  background-color: #1f3540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restart .content h2 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgba(168, 190, 201, 0.5411764706);
+}
+.restart .content section {
+  margin-top: 1.3rem;
+  display: flex;
+}
+.restart .content section div {
+  width: 120px;
+  height: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.restart .content section div:first-of-type {
+  background-color: rgba(168, 190, 201, 0.5411764706);
+}
+.restart .content section div:first-of-type h2 {
+  margin: 0;
+  color: #01161e;
+}
+.restart .content section div:last-of-type {
+  background-color: #f2b237;
+}
+.restart .content section div:last-of-type h2 {
+  margin: 0;
+  color: #01161e;
+}
+.restart .content section div h2 {
+  font-size: 15px;
+}
+
+.winnerGame {
+  position: absolute;
+  background-color: #01161e;
+  opacity: 0.98;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.winnerGame section {
+  background-color: #1f3540;
+  opacity: 100%;
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.winnerGame section h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.winnerGame section h4 {
+  margin-top: 0.3rem;
+  font-size: 30px;
+  font-weight: 600;
+  color: #31c4be;
+}
+.winnerGame section div {
+  margin-top: 2rem;
+  background-color: #f2b237;
+  padding: 0.5rem;
+  color: #01161e;
+  cursor: pointer;
+}
+@media all and (max-width: 650px) {
+  .winnerGame section h2 {
+    font-size: 15px;
+  }
+  .winnerGame section h4 {
+    font-size: 15px;
+  }
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: #01161e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
