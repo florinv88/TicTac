@@ -211,7 +211,7 @@ const App = () => {
           <section>
             <h2>{`${winnerGame === CPUPick ? "YOU LOSE !" : (winnerGame === "tie" ? "TIE !" : "YOU WON !")}`}</h2>
             {winnerGame === "tie" && <h4>PLEASE PRACTICE MORE ...</h4>}
-            {winnerGame === CPUPick && <h4>THIS GAME IS TO DIFICULT FOR YOU ...</h4>}
+            {winnerGame === CPUPick && <h4>THIS GAME IS TO DIFFICULT FOR YOU ...</h4>}
             {winnerGame === playerPick && <h4>You got lucky !</h4>}
             <div onClick={restartGame}>
               <h3>PLAY AGAIN</h3>
